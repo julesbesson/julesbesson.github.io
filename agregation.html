@@ -1,0 +1,215 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Page perso de Jules Besson</title>
+        
+            <!-- Pour le copier coller -->
+        <script src="dist/clipboard.min.js"></script>
+
+        <!-- 3. plus un petit script -->
+        <script>
+            var clipboard = new ClipboardJS('.bouton');
+            
+            clipboard.on('success', function(e) {
+                message.success('Copied clipboard.');
+            });
+        </script>
+        
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+                                    <span class="symbol"><img src="images/logo.png" alt="" /></span>
+									<span class="title">Page de Jules Besson</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Accueil</a></li>
+							<li><a href="parcours.html">Parcours</a></li>
+                            <li><a href="recherche.html">Recherche</a></li>
+                            <li><a href="cours.html">Cours</a></li>
+							<li><a href="agregation.html">Agrégation</a></li>
+                            <li><a href="documents.html">Documents</a></li>
+							<li><a href="index_english.html">English Version</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Bien préparer son agrégation</h1>
+							<span class="image main"><img src="images/img_tableau.png" alt="" /></span>
+							<p>Voici quelques documents qui pourraient vous aider pour votre préparation à l'agrégation de mathématiques. <br>
+        Bien évidemment ne boudez pas <a href="https://agreg.org/">le site officiel de l'agrégation</a> et surtout n'oubliez pas de lire le <a href="https://agreg.org/index.php?id=archives">rapport</a>.</p>
+                            
+                            <section>
+                            <h2>Quelques plans de leçon</h2>
+                            <ul>
+                                <li>Le <a href="fichiers/agregation/plans/plan_236.pdf">plan</a> de la leçon 236: <i>Illustrer par des exemples quelques méthodes de calcul d'intégrales de fonctions d'une ou plusieurs variables</i>.</li>
+                                <li>Le <a href="fichiers/agregation/plans/plan_245.pdf">plan</a> en anglais de la leçon 245: <i>Fonctions d'une variable complexe. Exemples et applications</i>.</li>
+                            </ul>
+        
+                            <h3>Quelques développements intéressants</h3>
+                            Avec ma <a href="/fichiers/agregation/developpements/couplages.pdf">liste de couplages</a>, voici quelques développements qui devraient attirer votre attention ainsi que celle du jury.
+                            <ul>
+                                <li>Le <a href="fichiers/agregation/developpements/thm_lie.pdf">théorème de Lie</a> qui nous donne une condition nécessaire et suffisante sur la co-trigonalisation d'un ensemble d'endomorphismes quand le corps est algébriquement clos.</li>
+                                <li>La <a href="fichiers/agregation/developpements/morph_cont_S_vers_GL.pdf">classification des morphismes continus du cercle dans \(\text{GL}_n (\mathbb{R})\)</a> par une méthode originale axée sur la co-diagonalisation et les relèvements.</li>
+                                <li>L'étude de la <a href="fichiers/agregation/developpements/cv_loi_mtype.pdf">transposée de la comatrice</a>, où l'on montre que c'est un polynôme en la matrice quelque soit le corps de base.</li>
+                                <li>La <a href="fichiers/agregation/developpements/sg_finis_so3.pdf">classification des sous-groupes finis de \( \text{SO}_3 (\mathbb{R}) \)</a> qui est ardue et longue, mais peut être découpée et remaniée à souhait selon la leçon travaillée.</li>
+                                <li>La <a href="/fichiers/agregation/developpements/sg_compacts.pdf">classification des sous-groupes compacts de \(\text{GL}(E)\)</a> qui est très élégante et utilise des techniques propres à de nombreuses leçons.</li>
+                                <li>Le <a href="fichiers/agregation/developpements/crame_chernoff.pdf">théorème des grandes dérivations de Cramér-Chernoff</a> qui traite le comportement des écarts d'ordre 1 de la moyenne d'une suite de VA iid par rapport à leur espérance.</li>
+                                <li>La <a href="fichiers/agregation/developpements/cv_loi_mtype.pdf">convergence en loi de variables aléatoire de même type</a> qui donne une explication à la nomenclature de la convergence en loi.</li>
+                            </ul>
+                            
+                            <h2>Option C</h2>
+                            <ul>
+                                <li>Pour la résolution de systèmes linéaires pour les matrices creuses et l'étude des suites récurrentes linéaires, le texte <a href="https://www.math.u-bordeaux.fr/~kbelabas/teach/Agreg/Wiedemann.pdf">Résolution de systèmes linéaires creux</a> et mon fichier sage <a href="fichiers/agregation/notebooks/wiedemann.ipynb" download="Méthode de Wiedemann pour les systèmes linéaires creux.ipynb">Méthode de Wiedemann</a>.</li>
+                                <li><a href="fichiers/agregation/notebooks/algo_berlekamp.ipynb" download="Algorithme de Berlekamp.ipynb">Algorithme de Berlekamp pour la factorisation de polynômes.</a></li>
+                                <li>Pour l'étude des polynômes linéarisés et d'un algorithme de multiplication rapide des polynômes dans un corps de caractéristique finie, le texte <a href="https://agreg.org/Textes/public2019-C3.pdf">C03</a> et mon fichier sage <a href="fichiers/agregation/notebooks/mult_poly_f2.ipynb" download="multiplication des polynômes dans F2.ipynb">Multiplication rapide de polynômes dans \(\mathbb{F}_2 \)</a>.</li>
+                                <li>Pour les courbes de Bézier, utilisées pour faire de jolies liaisons entre deux lettres ou pour arrondir les fenêtres sous Unix, le <a href="https://perso.univ-rennes1.fr/christophe.ritzenthaler/agregation/bezier.pdf">texte</a> et mon <a href="fichiers/agregation/notebooks/courbes_bezier.ipynb" download="Courbes de Bézier.ipynb">fichier sage</a>.</li>
+                                <li>En exclusivité le texte C44 de 2022 sur lequel je suis passé à l'oral de l'agrégation, ou plutôt, une retranscription de tête couplée d'une correction dans <a href="fichiers/agregation/notebooks/coef_fourier_discrets.ipybn" download="Coefficients de Fourier discrets.ipynb">ce fichier sage</a>. Il traite le calcul de coefficients de Fourier d'un signal avec un nombre fini de mesures (pas d'inquiétudes c'est de l'arithmétique).</li>
+                            </ul>
+
+                            <h3>Mémoire</h3>
+                            <p>Enfin voici mon <a href="fichiers/agregation/memoire.pdf">mémoire</a> sous la tutelle de <a href="https://perso.univ-rennes1.fr/matthieu.romagny/">Matthieu Romagny</a>. Il porte sur la leçon 159: <i>Formes linéaires et dualité en dimension finie</i>. Il bénéficie d'un petit hors sujet sur les sous-algèbres de Lie de \( \mathcal{L}(E)\) qui rentre bien dans le thème de la leçon mais qui est très hors-programme.</p>
+                                            </section>
+                            
+                            <h2>Quelques références utiles</h2>
+                                <div class="table-wrapper">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Nom</th>
+                                                <th>Auteur</th>
+                                                <th>Description</th>
+                                                <th>ISBN</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><em>Histoires hédonistes de groupes et de géométries.</em></td>
+                                                <td>Phillipe Caldero et Jérôme Germoni</td>
+                                                <td>Propose de nombreux compléments utiles pour la plupart des leçons d'algèbre et de géométrie.</td>
+                                                <td>9782916352312 <br />
+                                                9782916352435</td>
+                                            </tr>
+                                            <tr>
+                                                <td><em>Mathématiques pour l'agrégation, algèbre et géométrie.</em></td>
+                                                <td>Jean-Étienne Rombaldi</td>
+                                                <td>Indispensable pour la totalité des leçons d'algèbre et géométrie.</td>
+                                                <td>9782807332201</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="http://nrp-services.fr/ressources/nrp-4096-mathematiques-sujet-computer-dd_reduction.pdf">Exercices de réduction.</a> </td>
+                                                <td> MP CPGE  Puy-de-Dôme</td>
+                                                <td>À ne pas négliger pour les leçons de réduction pour se dérouiller un peu.</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td><em>Méthodes matricielles - Introduction à la complexité algébrique.</em></td>
+                                                <td>Jounaïdi Abdeljaoued et Henri Lombardi</td>
+                                                <td>Un bonus sympa pour l'option C, mais aussi très solide sur des leçons d'algèbre et d'arithmétique.</td>
+                                                <td>9783540202479</td>
+                                            </tr>
+                                            <tr>
+                                                <td><em>Analyse pour l'agrégation.</em></td>
+                                                <td>Hervé Queffelec et Claude Zuily</td>
+                                                <td>Même s'il est parfois un peu brut de décoffrage, il développe sérieusement les thèmes abordés.</td>
+                                                <td>9782100817085</td>
+                                            </tr>
+                                            <tr>
+                                                <td><em>Petit guide du calcul différentiel.</em></td>
+                                                <td>François Rouvière</td>
+                                                <td>Pour devenir un professionnel du calcul différentiel.</td>
+                                                <td>9782842251093</td>
+                                            </tr>
+                                            <tr>
+                                                <td><em>Introductions aux variétés différentielles.</em></td>
+                                                <td>Jacques Lafontaine</td>
+                                                <td>Pour aller plus loin dans la géométrie différentielle.</td>
+                                                <td>9782759801206</td>
+                                            </tr>
+                                            <tr>
+                                                <td><em>Probabilités pour les non-probabilistes.</em></td>
+                                                <td>Walter Appel</td>
+                                                <td>Peut vous sauver le jour de l'oral, bible des probas.</td>
+                                                <td>9782351413265</td>
+                                            </tr>
+                                            <tr>
+                                                <td><em>Les Contre-exemples en mathématiques.</em></td>
+                                                <td>Bertrand Hauchecorne</td>
+                                                <td>Tout est dans le titre et tout est dans le livre.</td>
+                                                <td>9782729834180</td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            
+                            
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Contact</h2>
+								<ul class="icons">
+									<li><span class="bouton icon solid style2 fa-envelope" data-clipboard-text="jules.besson@ens-rennes.fr"><span class="label">Email</span></span></li>
+                                    <li><span href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></span></li>
+                                    <li><a href="https://fr.linkedin.com/in/jules-besson-0b0086193/" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Jules Besson. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
