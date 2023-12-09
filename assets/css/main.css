@@ -163,7 +163,7 @@ input, select, textarea {
 	}
 
 	p {
-		margin: 0 0 2em 0;
+		margin: 0.5 0 0.5em 0;
 	}
 
 	h1 {
@@ -198,7 +198,7 @@ input, select, textarea {
 	h2, h3, h4, h5, h6 {
 		font-weight: 900;
 		line-height: 1.5;
-		margin: 0 0 2em 0;
+		margin: 1.5em 0 0.5em 0;
 		text-transform: uppercase;
 		letter-spacing: 0.05em;
 	}
@@ -1878,7 +1878,7 @@ input, select, textarea {
 
 	ul {
 		list-style: disc;
-		margin: 0 0 2em 0;
+		margin: 0.5 0 0.5em 0;
 		padding-left: 1em;
 	}
 
